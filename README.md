@@ -9,17 +9,21 @@ A Python implementation of a dice game that incorporates secure cryptographic te
 - Multiple custom dice configurations
 - Secure roll verification using cryptographic hashes
 - User-friendly interface with help option
+- Probability analysis between dice pairs
+- Secure commitment and verification system
 
 ## How to Play
 
 1. Run the game using Python:
    ```bash
-   python task3.py 2,3,4,4,5,6 1,1,8,8,6,6 7,5,3,7,5,3
+   python task3.py dice1 dice2 dice3
    ```
    - You must specify at least 3 dice configurations as command line arguments
    - Each dice configuration should be comma-separated integers (e.g., "2,3,4,4,5,6")
+   - Use the --help flag to see available options: `python task3.py --help`
 
 2. The game will:
+   - Show probability table of dice winning chances
    - Perform a fair coin toss using HMAC to determine who picks first
    - Allow you to select a dice from the available options
    - Show computer's dice selection
@@ -33,11 +37,8 @@ A Python implementation of a dice game that incorporates secure cryptographic te
 - **Nonce-based Verification**: Each commitment includes a unique nonce
 - **Secure Key Generation**: Uses cryptographically secure random numbers
 - **Roll Verification**: Ensures rolls cannot be manipulated after commitment
-
-## Screenshots
-
-![Game Start](screenshots/Screenshot%202025-07-27%20223730.png)
-![Game Play](screenshots/Screenshot%202025-07-27%20223747.png)
+- **Secure Communication**: All commitments are verified before reveal
+- **Fair Random Selection**: Uses cryptographically secure random numbers for all selections
 
 ## Installation
 
@@ -48,6 +49,23 @@ A Python implementation of a dice game that incorporates secure cryptographic te
    ```
 
 ## Requirements
+- Python 3.8 or higher
+- cryptography library
+- argparse library
+- tabulate library
+
+## Usage Example
+
+```bash
+python task3.py "2,2,4,4,9,9" "6,8,1,1,8,6" "7,5,3,7,5,3"
+```
+
+Each dice must have exactly 6 comma-separated integers. The game will:
+1. Display a probability table showing winning chances between dice pairs
+2. Use a fair random protocol to determine who picks first
+3. Allow players to select their dice
+4. Perform secure rolls with commitment and verification
+5. Display the winner
 
 - Python 3.x
 - Standard Python libraries (random, hmac, hashlib, secrets)
