@@ -67,6 +67,20 @@ Each dice must have exactly 6 comma-separated integers. The game will:
 4. Perform secure rolls with commitment and verification
 5. Display the winner
 
+## Screenshots
+
+### Game Start - Probability Table
+![Game Start](screenshots/Screenshot%202025-07-27%20223730.png)
+
+### Game Play - Dice Selection and Roll
+![Game Play](screenshots/Screenshot%202025-07-27%20223747.png)
+
+### Fair Random Selection
+![Fair Random](screenshots/Screenshot%202025-07-27%20223805.png)
+
+### Dice Roll and Verification
+![Dice Roll](screenshots/Screenshot%202025-07-27%20223825.png)
+
 - Python 3.x
 - Standard Python libraries (random, hmac, hashlib, secrets)
 
