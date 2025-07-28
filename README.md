@@ -70,16 +70,16 @@ Each dice must have exactly 6 comma-separated integers. The game will:
 ## Screenshots
 
 ### Game Start - Probability Table
-![Game Start](screenshots/Screenshot%202025-07-27%20223730.png)
+![Game Start](screenshots/Screenshot%20%28288%29.png)
 
 ### Game Play - Dice Selection and Roll
-![Game Play](screenshots/Screenshot%202025-07-27%20223747.png)
+![Game Play](screenshots/Screenshot%20%28289%29.png)
 
 ### Fair Random Selection
-![Fair Random](screenshots/Screenshot%202025-07-27%20223805.png)
+![Fair Random](screenshots/Screenshot%20%28290%29.png)
 
 ### Dice Roll and Verification
-![Dice Roll](screenshots/Screenshot%202025-07-27%20223825.png)
+![Dice Roll](screenshots/Screenshot%20%28291%29.png)
 
 - Python 3.x
 - Standard Python libraries (random, hmac, hashlib, secrets)
